@@ -1,0 +1,23 @@
+.page__products-pagination {
+  margin-top: 40px;
+}
+
+.products-pagination__body {
+  color: #34252F;
+  opacity: 0.9;
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .page__products-pagination {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .page__products-pagination {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 560px) {
+}

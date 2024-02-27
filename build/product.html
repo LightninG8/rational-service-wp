@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product</title>
+
+  <link rel="stylesheet" href="./globals.css">
+  <link rel="stylesheet" href="./templates/header/header.css">
+  <link rel="stylesheet" href="./templates/footer/footer.css">
+  <link rel="stylesheet" href="./templates/main/main.css">
+  <link rel="stylesheet" href="./templates/home-categories/home-categories.css">
+  <link rel="stylesheet" href="./templates/breadcrumbs/breadcrumbs.css">
+  <link rel="stylesheet" href="./templates/product/product.css">
+
+  <link rel="stylesheet" href="./templates/clients/clients.css">
+  <link rel="stylesheet" href="./templates/contact-form/contact-form.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+</head>
+
+<body class="page">
+  <header class="page__header header">
+    <div class="header__main">
+      <div class="container header__body">
+  
+        <div class="header__column header__logo logo">
+          <a href="#" class="logo__container">
+            <img class="logo__image image" src="./assets/images/logo.png" alt="Cервисная служба Рациональ - сервис">
+          </a>
+          <h2 class="logo__title bold">Cервисная служба <br /> Рациональ - сервис</h2>
+        </div>
+  
+        <div class="header__column header__location location">
+          <div class="location__body">
+            <img class="location__icon" src="./assets/images/pointer-small.png" alt="Москва и МО">
+          </div>
+          <p class="location__title bold">Москва и МО</p>
+        </div>
+  
+        <div class="header__column header__socials socials">
+          <div class="socials__icons ">
+            <a href="#" class="socials__item">
+              <img class="socials__image image" src="./assets/images/whatsapp.png" alt="whatsapp">
+            </a>
+            <a href="#" class="socials__item">
+              <img class="socials__image image" src="./assets/images/telegram.png" alt="telegram">
+            </a>
+          </div>
+          <div class="socials__text">
+            <p class="socials__title bold">Есть вопрос?</p>
+            <p class="socials__subtitle">Задайте напрямую</p>
+          </div>
+        </div>
+  
+        <div class="header__column header__contacts contacts">
+          <div class="contacts__row contacts__row_text">
+            <p class="contacts__title contacts__title_always">На связи <span class="bold">24/7</span> </p>
+          </div>
+          <div class="contacts__row contacts__row_contacts">
+            <a class="contacts__contact contact link" href="tel:+7 968 938 59 48">
+              <div class="contact__row">
+                <div class="contact__icon">
+                  <img class="contact__image" src="./assets/images/phone.png" alt="+7 968 938 59 48">
+                </div>
+                <p class="contact__phone bold">+7 968 938 59 48</p>
+              </div>
+              <div class="contact__row">
+                <p class="contact__title">(Диспетчер)</p>
+              </div>
+            </a>
+            <a class="contacts__contact contact link" href="tel:+7 903 278 95 66">
+              <div class="contact__row">
+                <div class="contact__icon">
+                  <img class="contact__image" src="./assets/images/phone.png" alt="+7 903 278 95 66">
+                </div>
+                <p class="contact__phone bold">+7 903 278 95 66</p>
+              </div>
+              <div class="contact__row">
+                <p class="contact__title">(Технические вопросы)</p>
+              </div>
+            </a>
+          </div>
+        </div>
+  
+        <div class="header__burger burger">
+          <div class="burger__row"></div>
+          <div class="burger__row"></div>
+          <div class="burger__row"></div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="header__menu">
+      <nav class="container header__nav nav">
+        <ul class="nav__header-list list">
+          <li class="nav__header-item">
+            <a href="#" class="link nav__header-link">
+              Главная
+            </a>
+          </li>
+          <li class="nav__header-item">
+            <a href="#" class="link nav__header-link">
+              О нас
+            </a>
+          </li>
+          <li class="nav__header-item">
+            <a href="#" class="link nav__header-link">
+              Виды техники
+            </a>
+          </li>
+          <li class="nav__header-item">
+            <a href="#" class="link nav__header-link">
+              Бренды
+            </a>
+          </li>
+          <li class="nav__header-item">
+            <a href="#" class="link nav__header-link" data-value="-20%">
+              Регулярное обслуживание
+            </a>
+          </li>
+          <li class="nav__header-item">
+            <a href="#" class="link nav__header-link">
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  
+    <div class="header__mobile mobile">
+      <div class="container mobile__body">
+        <nav class="mobile__nav nav">
+          <ul class="nav__mobile-list list">
+            <li class="nav__mobile-item">
+              <a href="#" class="link nav__mobile-link">
+                Главная
+              </a>
+            </li>
+            <li class="nav__mobile-item">
+              <a href="#" class="link nav__mobile-link">
+                О нас
+              </a>
+            </li>
+            <li class="nav__mobile-item">
+              <a href="#" class="link nav__mobile-link">
+                Виды техники
+              </a>
+            </li>
+            <li class="nav__mobile-item">
+              <a href="#" class="link nav__mobile-link">
+                Бренды
+              </a>
+            </li>
+            <li class="nav__mobile-item">
+              <a href="#" class="link nav__mobile-link" data-value="-20%">
+                Регулярное обслуживание
+              </a>
+            </li>
+            <li class="nav__mobile-item">
+              <a href="#" class="link nav__mobile-link">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+  
+        <div class="mobile__location mobile-location">
+          <div class="mobile-location__location">
+            <div class="mobile-location__icon-wrapper">
+              <img class="mobile-location__icon" src="./assets/images/pointer-small.png" alt="Москва и МО">
+            </div>
+            <p class="mobile-location__title bold">Москва и МО</p>
+          </div>
+          <div class="mobile-location__address">
+            <p class="mobile-location__address-title">Адрес склада:</p>
+            <p class="mobile-location__address-text">МО, Раменский район, д. Литвиново, ул. Центральная, д. 110/2</p>
+          </div>
+          <a href="mailto:rationalmoscow@gmail.com" class="mobile-location__email link">rationalmoscow@gmail.com</a>
+          <div class="mobile-location__socials">
+            <a href="#" class="mobile-location__social">
+              <img class="mobile-location__social-icon image" src="./assets/images/whatsapp.png" alt="whatsapp">
+            </a>
+            <a href="#" class="mobile-location__social">
+              <img class="mobile-location__social-icon image" src="./assets/images/telegram.png" alt="telegram">
+            </a>
+          </div>
+        </div>
+  
+        <div class="mobile__contacts contacts">
+          <div class="mobile-contacts__row mobile-contacts__row_text">
+            <p class="mobile-contacts__title mobile-contacts__title_always">На связи <span class="bold">24/7</span> </p>
+          </div>
+          <a class="mobile-contacts__contact mobile-contact link" href="tel:+7 968 938 59 48">
+            <div class="mobile-contact__row">
+              <div class="mobile-contact__icon">
+                <img class="mobile-contact__image" src="./assets/images/phone.png" alt="+7 968 938 59 48">
+              </div>
+              <p class="mobile-contact__phone bold">+7 968 938 59 48</p>
+            </div>
+            <div class="mobile-contact__row">
+              <p class="mobile-contact__title">(Диспетчер)</p>
+            </div>
+          </a>
+          <a class="mobile-contacts__contact mobile-contact link" href="tel:+7 903 278 95 66">
+            <div class="mobile-contact__row">
+              <div class="mobile-contact__icon">
+                <img class="mobile-contact__image" src="./assets/images/phone.png" alt="+7 903 278 95 66">
+              </div>
+              <p class="mobile-contact__phone bold">+7 903 278 95 66</p>
+            </div>
+            <div class="mobile-contact__row">
+              <p class="mobile-contact__title">(Технические вопросы)</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  
+  
+  </header>
+
+  <main class="page__main main">
+    <section class="page__content">
+      <section class="page__breadcrumbs breadcrumbs">
+  <nav class="container breadcrumbs__nav">
+    
+    <ul class="breadcrumbs__list list">
+      <li class="breadcrumbs__item">
+        <a href="#" class="breadcrumbs__link link">Главная</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a href="#" class="breadcrumbs__link link">Каталог</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a href="#" class="breadcrumbs__link link">Холодильное оборудование</a>
+      </li>
+    </ul>
+  </nav>
+
+</section>
+
+      <div class="page__title title container">Abat - ремонт/запчасти</div>
+
+      <div class="product page__product">
+  <div class="product__body container">
+    <div class="product__photo">
+      <img class="product__image image" src="./assets/images/abat.png" alt="abat">
+    </div>
+    <div class="product__advantages">
+      <p class="product__advantage">
+        Диагностика и ремонт
+      </p>
+      <p class="product__advantage">
+        Подключение
+      </p>
+      <p class="product__advantage">
+        Техническое обслуживание
+      </p>
+      <p class="product__advantage">
+        Пусконаладочные работы
+      </p>
+      <p class="product__advantage">
+        Настройка
+      </p>
+      <p class="product__advantage">
+        Монтаж и демонтаж
+      </p>
+      <p class="product__advantage">
+        Исправление ошибок
+      </p>
+      <p class="product__advantage">
+        Запчасти и расходники
+      </p>
+    </div>
+    <div class="product__contact">
+      <div class="product__button">
+        <span>ОСТАВИТЬ ЗАЯВКУ</span>
+        <div class="product__button-image">
+          <img class="image contact-form__submit-arrow" src="./assets/images/arrow-white.png" alt="->">
+        </div>
+      </div>
+      <div class="product__call">
+        <img src="./assets/images/click.png" alt="click" class="product__call-image">
+        <p class="product__call-text"><span class="bold">Перезвоним</span><br/> через 1 минуту</p>
+      </div>
+    </div>
+    <div class="product__banners">
+      <div class="product__banner product-banner">
+        <div class="product-banner__text">
+          <p class="product-banner__title">Скидка 20%</p>
+          <p class="product-banner__subtitle">при заключении договора на ТО</p>
+        </div>
+        <div class="product-banner__photo">
+          <img src="./assets/images/banner-man.png" alt="" class="product-banner__image image">
+        </div>
+      </div>
+      <div class="product__banner product-banner">
+        <div class="product-banner__text">
+          <p class="product-banner__title">Гарантия</p>
+          <p class="product-banner__subtitle">на ремонт до 12 месяцев</p>
+        </div>
+        <div class="product-banner__photo">
+          <img src="./assets/images/banner-docs.png" alt="" class="product-banner__image image">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    </section>
+
+
+
+    <section class="page__section page__clients clients">
+  <div class="clients__body container">
+    <h2 class="clients__title page__title title">Регулярное техническое обслуживание</h2>
+    <p class="clients__subtitle page__subtitle subtitle">Пополните список наших клиентов</p>
+    <div class="clients__advantages">
+      <div class="clients__advantage"><span class="bold">Приоритет</span> ремонта</div>
+      <div class="clients__advantage"><span class="bold">-20%</span> от стоимости ремонта</div>
+      <div class="clients__advantage"><span class="bold">Подменное</span> оборудование</div>
+      <div class="clients__advantage"><span class="bold">Фото/видео отчеты</span> в приложении</div>
+      <div class="clients__advantage">Оплата <span class="bold">после ремонта</span></div>
+    </div>
+  </div>
+  <div class="clients__slider">
+    <div class="clients__slide-wrapper">
+      <div class="clients__slide">
+        <img src="./assets/images/apteki.png" alt="">
+        <img src="./assets/images/volkonskiy.png" alt="">
+      </div>
+    </div>
+
+    <div class="clients__slide-wrapper">
+      <div class="clients__slide">
+        <img src="./assets/images/gazprom.png" alt="">
+        <img src="./assets/images/hlebnica.png" alt="">
+      </div>
+    </div>
+
+    <div class="clients__slide-wrapper">
+      <div class="clients__slide">
+        <img src="./assets/images/wildberries.png" alt="">
+        <img src="./assets/images/rostics.png" alt="">
+      </div>
+    </div>
+
+    <div class="clients__slide-wrapper">
+      <div class="clients__slide">
+        <img src="./assets/images/subway.png" alt="">
+        <img src="./assets/images/bbburger.png" alt="">
+      </div>
+    </div>
+
+    <div class="clients__slide-wrapper">
+      <div class="clients__slide">
+        <img src="./assets/images/chaikhona.png" alt="">
+        <img src="./assets/images/neftmagistral.png" alt="">
+      </div>
+    </div>
+
+    <div class="clients__slide-wrapper">
+      <div class="clients__slide">
+        <img src="./assets/images/shokoladnica.png" alt="">
+        <img src="./assets/images/u.png" alt="">
+      </div>
+    </div>
+    <div class="clients__slide-wrapper">
+      <div class="clients__slide">
+        <img src="./assets/images/apteki.png" alt="">
+        <img src="./assets/images/volkonskiy.png" alt="">
+      </div>
+    </div>
+
+    <div class="clients__slide-wrapper">
+      <div class="clients__slide">
+        <img src="./assets/images/gazprom.png" alt="">
+        <img src="./assets/images/hlebnica.png" alt="">
+      </div>
+    </div>
+
+    <div class="clients__slide-wrapper">
+      <div class="clients__slide">
+        <img src="./assets/images/wildberries.png" alt="">
+        <img src="./assets/images/rostics.png" alt="">
+      </div>
+    </div>
+
+    <div class="clients__slide-wrapper">
+      <div class="clients__slide">
+        <img src="./assets/images/subway.png" alt="">
+        <img src="./assets/images/bbburger.png" alt="">
+      </div>
+    </div>
+
+    <div class="clients__slide-wrapper">
+      <div class="clients__slide">
+        <img src="./assets/images/chaikhona.png" alt="">
+        <img src="./assets/images/neftmagistral.png" alt="">
+      </div>
+    </div>
+
+    <div class="clients__slide-wrapper">
+      <div class="clients__slide">
+        <img src="./assets/images/shokoladnica.png" alt="">
+        <img src="./assets/images/u.png" alt="">
+      </div>
+    </div>
+
+
+
+
+  </div>
+</section>
+
+
+    <section class="page__section page__contact-form contact-form">
+
+  <div class="contact-form__body container">
+    <img src="./assets/images/iphone.png" class="contact-form__bg image" />
+
+    <h3 class="contact-form__title">Узнайте стоимость ремонта прямо сейчас</h3>
+    <p class="contact-form__subtitle">Если вы вышлете нам фото/видео оборудования и опишите кратко опишите,
+      то мы сообщим вам примерную стоимость ремонта до приезда мастера</p>
+    <div class="contact-form__socials">
+      <p class="contact-form__socials-text">Или напишите нам, мы онлайн</p>
+      <div class="contact-form__socials-icons">
+        <a href="#" class="contact-form__social">
+          <img src="./assets/images/whatsapp.png" alt="whatsapp" class="contact-form__social-image">
+        </a>
+        <a href="#" class="contact-form__social">
+          <img src="./assets/images/telegram.png" alt="whatsapp" class="contact-form__social-image">
+        </a>
+      </div>
+    </div>
+    <form action="" class="contact-form__form">
+      <div class="contact-form__form-column">
+        <p class="contact-form__input-title">Введите номер телефона</p>
+        <input type="phone" placeholder="+ 7 (_ _ _) _ _ _ - _ _ - _ _" class="contact-form__input">
+        <div class="contact-form__submit-wrapper">
+          <label>
+            <input type="checkbox" checked>
+          </label>
+          <div class="contact-form__submit-text">
+            Согласен с условиями <a href="#" class="contact-form__submit-link link">политики конфиденциальности
+              данных</a>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form__form-column">
+        <button type="submit" class="contact-form__submit">
+          <span>Узнать стоимость</span>
+          <div>
+            <img class="image contact-form__submit-arrow" src="./assets/images/arrow-white.png" alt="->">
+          </div>
+        </button>
+      </div>
+    </form>
+    <img src="./assets/images/iphone-mob.png" class="contact-form__bg-mob image" />
+  </div>
+</section>
+
+
+  </main>
+
+
+
+
+  <footer class="footer page__footer">
+  <div class="container footer__main">
+    <div class="footer__column footer-column footer__column_logo">
+      <div class="footer__logo-wrapper">
+        <div class="footer__logo">
+          <img class="footer__logo-image" src="./assets/images/logo.png" alt="Rational">
+        </div>
+        <p class="footer__logo-title">
+          <span class="bold">Cервисная служба для</span> <br /> предприятий HoReCa
+        </p>
+
+      </div>
+      <div class="footer__location">
+        <div class="footer__icon-wrapper">
+          <img class="footer__icon-pointer" src="./assets/images/pointer-small.png" alt="Москва и МО">
+        </div>
+        <p class="footer__location-title bold">Москва и МО</p>
+      </div>
+      <div class="footer__address">
+        <p class="footer__address-title">Адрес склада:</p>
+        <p class="footer__address-text">МО, Раменский район, д. Литвиново, ул. Центральная, д. 110/2</p>
+      </div>
+      <a href="mailto:rationalmoscow@gmail.com" class="footer__email link">rationalmoscow@gmail.com</a>
+    </div>
+
+    <div class="footer__column footer-column footer__column_contacts">
+      <p class="footer__title">Контакты</p>
+      <div class="footer-column__body">
+        <a class="footer__contact footer-contact link" href="tel:+7 968 938 59 48">
+          <p class="footer-contact__phone bold">+7 968 938 59 48</p>
+          <p class="footer-contact__title">(Диспетчер)</p>
+        </a>
+        <a class="footer__contact footer-contact link" href="tel:+7 903 278 95 66">
+          <p class="footer-contact__phone bold">+7 903 278 95 66</p>
+          <p class="footer-contact__title">(Технические вопросы)</p>
+        </a>
+        <div class="footer-column__socials footer-socials">
+          <div class="footer-socials__wrapper">
+            <a href="#" class="footer-socials__social">
+              <img class="footer-socials__social-icon image" src="./assets/images/whatsapp.png" alt="whatsapp">
+            </a>
+            <a href="#" class="footer-socials__social">
+              <img class="footer-socials__social-icon image" src="./assets/images/telegram.png" alt="telegram">
+            </a>
+          </div>
+
+          <p class="footer-socials__title footer-socials__title_always">На связи <span class="bold">24/7</span> </p>
+        </div>
+      </div>
+
+
+    </div>
+    <nav class="footer__column footer-column footer__column_nav nav">
+      <p class="footer__title">Навигация по сайту</p>
+      <ul class="footer__menu footer-column__body list">
+        <li class="nav__footer-item">
+          <a href="#" class="link nav__footer-link">
+            Главная
+          </a>
+        </li>
+        <li class="nav__footer-item">
+          <a href="#" class="link nav__footer-link">
+            О нас
+          </a>
+        </li>
+        <li class="nav__footer-item">
+          <a href="#" class="link nav__footer-link">
+            Виды техники
+          </a>
+        </li>
+        <li class="nav__footer-item">
+          <a href="#" class="link nav__footer-link">
+            Бренды
+          </a>
+        </li>
+        <li class="nav__footer-item">
+          <a href="#" class="link nav__footer-link" data-value="-20%">
+            Регулярное обслуживание
+          </a>
+        </li>
+        <li class="nav__footer-item">
+          <a href="#" class="link nav__footer-link">
+            Контакты
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="footer__column footer-column footer__column_advantages footer-advantages">
+      <p class="footer__title">Преимущества</p>
+      <ul class="footer-column__body list footer-advantages footer-advantages__list">
+        <li class="footer-advantages__item">
+          <p class="footer-advantages__title">13 лет работы</p>
+          <p class="footer-advantages__subtitle">Выполнено 85500 заявок</p>
+        </li>
+        <li class="footer-advantages__item">
+          <p class="footer-advantages__title">Всегда на связи</p>
+          <p class="footer-advantages__subtitle">Время ответа диспетчера  20 секунд</p>
+        </li>
+        <li class="footer-advantages__item">
+          <p class="footer-advantages__title">Ремонт с 1 раза</p>
+          <p class="footer-advantages__subtitle">Не допускаем повторных выездов</p>
+        </li>
+        <li class="footer-advantages__item">
+          <p class="footer-advantages__title">Оплата частями</p>
+          <p class="footer-advantages__subtitle">В случае дорогостоящего ремонта</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer__copyright copyright">
+    <p class="copyright__item">
+      Cервисный центр для предприятий HoReCa 2013 - 2024
+    </p>
+    <p class="copyright__item">© Все права защищены</p>
+    <a href="#" class="copyright__item link copyright__link">Политика конфедициальности</a>
+    <p class="copyright__item">Designed by leyapolly</p>
+  </div>
+</footer>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script src="./templates/header/header.js"></script>
+  <script src="./templates/clients/clients.js"></script>
+
+</body>
+
+</html>
