@@ -27,6 +27,8 @@ require get_template_directory() . '/includes/enqueue-script-style.php';
  */
 require get_template_directory() . '/includes/helpers.php';
 
+
+
 /**
  * Implement the Custom Header feature.
  */

@@ -32,6 +32,14 @@ Container::make('theme_options', 'Настройки темы')
         Field::make('text', 'copyright_link', 'Ссылка'),
       ))
   ))
+  ->add_tab(('Меню'), array(
+    Field::make('complex', 'rational_menu', 'Меню')
+      ->add_fields(array(
+        Field::make('text', 'menu_title', 'Заголовок'),
+        Field::make('text', 'menu_link', 'Ссылка'),
+        Field::make('text', 'menu_sale', 'Скидка'),
+      )),
+  ))
   ->add_tab(('Контакты'), array(
     Field::make('complex', 'rational_contacts_socials', 'Социальные сети')
       ->add_fields(array(
