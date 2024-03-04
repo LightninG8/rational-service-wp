@@ -69,6 +69,8 @@
 
   border-radius: 100px;
   background: var(--color-theme-red);
+
+  cursor: pointer;
 }
 
 .hero__contact-arrow {

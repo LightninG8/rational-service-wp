@@ -22,6 +22,7 @@ function rational_scripts() {
 	wp_enqueue_style( 'product-list-pagination', get_template_directory_uri() . '/assets/css/product-list-pagination.css');
 	wp_enqueue_style( 'product-list', get_template_directory_uri() . '/assets/css/product-list.css');
 	wp_enqueue_style( 'product', get_template_directory_uri() . '/assets/css/product.css');
+	wp_enqueue_style( 'steps', get_template_directory_uri() . '/assets/css/steps.css');
 	
 
 }

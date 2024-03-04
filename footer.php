@@ -12,7 +12,7 @@
 
 ?>
 
-</div><!-- #content -->
+</main><!-- #content -->
 
 <footer id="colophon" class="site-footer footer page__footer">
   <div class="container footer__main">
@@ -169,7 +169,6 @@
 
 
 </footer><!-- #colophon -->
-</div><!-- #page -->
 
 <?php wp_footer(); ?>
 

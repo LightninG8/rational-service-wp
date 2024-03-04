@@ -13,7 +13,7 @@
       //   .getPropertyValue("--header-body-height")
       //   .replace("px", "");
 
-      if (document.documentElement.scrollTop > 199) {
+      if (document.documentElement.scrollTop > 198) {
         headerElem.classList.add("scrollOn");
       } else {
         headerElem.classList.remove("scrollOn");

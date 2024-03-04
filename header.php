@@ -23,8 +23,6 @@
 </head>
 
 <body <?php body_class(); ?>>
-  <div id="page" class="site">
-
     <header id="masthead" class="site-header page__header header">
       <div class="header__main">
         <div class="container header__body">
@@ -244,4 +242,4 @@
       </div>
     </header><!-- #masthead -->
 
-    <div id="content" class="site-content">
+    <main id="content" class="site-content page__main main">

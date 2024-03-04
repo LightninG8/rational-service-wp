@@ -54,17 +54,17 @@ Container::make('theme_options', 'Настройки темы')
       ))
   ))
   ->add_tab(('Слайдер "Клиенты"'), array(
-    Field::make('complex', 'rational_slider_clients_advantages', 'Преимущества')
-      ->add_fields(array(
-        Field::make('text', 'advantage_title', 'Заголовок'),
-      )),
+    // Field::make('complex', 'rational_slider_clients_advantages', 'Преимущества')
+    //   ->add_fields(array(
+    //     Field::make('text', 'advantage_title', 'Заголовок'),
+    //   )),
     Field::make('complex', 'rational_slider_clients_logos', 'Клиенты')
       ->add_fields(array(
         Field::make('image', 'client_image', 'Логотип'),
       )),
   ))
   ->add_tab(('Слайдер "Бренды"'), array(
-    Field::make('complex', 'rational_slider_brands', 'Клиенты')
+    Field::make('complex', 'rational_slider_brands', 'Бренды')
       ->add_fields(array(
         Field::make('image', 'brand_image', 'Логотип'),
         Field::make('text', 'brand_title', 'Заголовок'),
