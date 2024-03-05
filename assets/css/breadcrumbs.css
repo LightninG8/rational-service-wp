@@ -15,9 +15,16 @@
 
 .breadcrumbs__item {
   position: relative;
+
+  font-family: Manrope;
+  font-size: var(--font-text-common);
+  font-weight: 400;
+  text-align: center;
+  color: #b1b1b1;
+
+ 
+
 }
-
-
 
 .breadcrumbs__item::after {
   content: "";
@@ -40,19 +47,23 @@
   display: none;
 }
 
-.breadcrumbs__link {
+
+.breadcrumbs__item a {
+  text-decoration: none;
+
+
   font-family: Manrope;
   font-size: var(--font-text-common);
   font-weight: 400;
   text-align: center;
+  color: inherit;
 
-  opacity: 0.5;
 
   transition: 0.1s;
 }
 
-.breadcrumbs__link:hover {
-  opacity: 0.7;
+.breadcrumbs__item a:hover {
+  color: var(--color-theme-black);
 }
 
 @media screen and (max-width: 1200px) {
