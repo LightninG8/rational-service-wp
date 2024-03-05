@@ -1,14 +1,16 @@
 <?php
-add_action( 'after_setup_theme', 'crb_load' );
-function crb_load() {
-	load_template( get_template_directory() . '/includes/carbon-fields/vendor/autoload.php' );
-	\Carbon_Fields\Carbon_Fields::boot();
+add_action('after_setup_theme', 'crb_load');
+function crb_load()
+{
+  load_template(get_template_directory() . '/includes/carbon-fields/vendor/autoload.php');
+  \Carbon_Fields\Carbon_Fields::boot();
 }
 
-add_action( 'carbon_fields_register_fields', 'rational_register_custom_fields' );
-function rational_register_custom_fields() {
-	require get_template_directory() . '/includes/custom-fields-options/metabox.php';
-	require get_template_directory() . '/includes/custom-fields-options/theme-optons.php';
+add_action('carbon_fields_register_fields', 'rational_register_custom_fields');
+function rational_register_custom_fields()
+{
+  require get_template_directory() . '/includes/custom-fields-options/metabox.php';
+  require get_template_directory() . '/includes/custom-fields-options/theme-optons.php';
 }
 /*
  * Подключение настроек темы
@@ -53,27 +55,30 @@ require get_template_directory() . '/includes/customizer.php';
 /**
  * Load Jetpack compatibility file.
  */
-if ( defined( 'JETPACK__VERSION' ) ) {
-	require get_template_directory() . '/includes/jetpack.php';
+if (defined('JETPACK__VERSION')) {
+  require get_template_directory() . '/includes/jetpack.php';
 }
 
 /**
  * Load WooCommerce compatibility file.
  */
-if ( class_exists( 'WooCommerce' ) ) {
-	require get_template_directory() . '/includes/woocommerce.php';
-	require get_template_directory() . '/woocommerce/includes/wc-functions.php';
-	require get_template_directory() . '/woocommerce/includes/wc-functions.php';
+if (class_exists('WooCommerce')) {
+  require get_template_directory() . '/includes/woocommerce.php';
+  require get_template_directory() . '/woocommerce/includes/wc-functions.php';
+  require get_template_directory() . '/woocommerce/includes/wc-functions.php';
 }
 
 
 ## Определение шаблона для страницы Магазина shop.php
-add_filter( 'woocommerce_template_loader_files','qfurs_add_shop_template_file', 10, 1 );
- 
-function qfurs_add_shop_template_file($default_file){
-    if( is_shop()){
-        $default_file[] = WC()->template_path() .'shop.php';
-    }
- 
-    return $default_file;
+add_filter('woocommerce_template_loader_files', 'qfurs_add_shop_template_file', 10, 1);
+
+function qfurs_add_shop_template_file($default_file)
+{
+  if (is_shop()) {
+    $default_file[] = WC()->template_path() . 'shop.php';
+  }
+
+  return $default_file;
 }
+
+

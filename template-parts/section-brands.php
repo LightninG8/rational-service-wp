@@ -4,7 +4,7 @@ if (!defined('ABSPATH')) {
 }
 ?>
 
-<section class="page__section brands">
+<section class="page__section brands" id="brands">
   <?php
   $slider_brands = carbon_get_theme_option('rational_slider_brands');
   ?>
@@ -38,7 +38,7 @@ if (!defined('ABSPATH')) {
     </div>
     <div class="brands__catalog">
       <p class="brands__catalog-title">Подробнее в нашем каталоге</p>
-      <a href="#" class="brands__catalog-link link">Перейти в каталог</a>
+      <a href="/catalog" class="brands__catalog-link link">Перейти в каталог</a>
     </div>
   </div>
 </section>

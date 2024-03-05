@@ -6,7 +6,7 @@ if (!defined('ABSPATH')) {
 global $product;
 
 $post_thumbnail_id = $product->get_image_id();
-$image = wp_get_attachment_url( $post_thumbnail_id );
+$image = wp_get_attachment_url($post_thumbnail_id);
 $name = $product->get_name();
 
 ?>
@@ -44,15 +44,16 @@ $name = $product->get_name();
       </p>
     </div>
     <div class="product__contact">
-      <div class="product__button">
+      <?php awooc_html_custom_add_to_cart(); ?>
+      <!-- <a href="#contact-form" class="product__button link">
         <span>ОСТАВИТЬ ЗАЯВКУ</span>
         <div class="product__button-image">
           <img class="image contact-form__submit-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-white.png" alt="->">
         </div>
-      </div>
+      </a> -->
       <div class="product__call">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/click.png" alt="click" class="product__call-image">
-        <p class="product__call-text"><span class="bold">Перезвоним</span><br/> через 1 минуту</p>
+        <p class="product__call-text"><span class="bold">Перезвоним</span><br /> через 1 минуту</p>
       </div>
     </div>
     <div class="product__banners">

@@ -66,6 +66,7 @@
   gap: 25px;
 }
 
+.woocommerce .product__contact .button.alt,
 .product__button {
   display: flex;
   gap: 7px;
@@ -83,6 +84,10 @@
   border-radius: 100px;
 
   cursor: pointer;
+}
+
+.woocommerce .product__contact .button.alt:hover {
+  background: var(--color-theme-red);
 }
 
 .product__call {
@@ -160,6 +165,7 @@
     max-height: 246px;
   }
 
+  .woocommerce .product__contact .button.alt,
   .product__button {
     height: 70px;
     padding: 22px 35px;
@@ -215,7 +221,7 @@
   .product-banner {
     font-size: var(--font-text-small);
   }
-
+  .woocommerce .product__contact .button.alt,
   .product__button {
     height: 90px;
     padding: 0 80px;
@@ -243,13 +249,12 @@
 
   .product__banner {
     padding: 15px 25px;
-
   }
 
   .product-banner__text {
     max-width: 140px;
   }
-
+  .woocommerce .product__contact .button.alt,
   .product__button {
     padding: 0;
     align-items: center;

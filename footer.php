@@ -14,7 +14,7 @@
 
 </main><!-- #content -->
 
-<footer id="colophon" class="site-footer footer page__footer">
+<footer class="site-footer footer page__footer" id="footer">
   <div class="container footer__main">
     <div class="footer__column footer-column footer__column_logo">
       <!-- LOGO -->

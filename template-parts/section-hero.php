@@ -3,7 +3,7 @@ if (!defined('ABSPATH')) {
   exit; // Exit if accessed directly
 }
 ?>
-<section class="page__hero hero">
+<section class="page__hero hero" id="hero">
   <div class="hero__body container">
     <div class="hero__text">
       <p class="hero__subtitle">С профессионалами <span class="red">всегда легко</span></p>
@@ -11,12 +11,12 @@ if (!defined('ABSPATH')) {
       </h2>
     </div>
     <div class="hero__contact">
-      <div class="hero__button">
+      <a href="/#contact-form" class="hero__button link">
         <span>ОСТАВИТЬ ЗАЯВКУ</span>
         <div class="hero__button-image">
           <img class="image hero__contact-arrow" src="<?php echo get_template_directory_uri() ?>/assets/images/arrow-white.png" alt="->">
         </div>
-      </div>
+      </a>
       <div class="hero__call">
         <img src="<?php echo get_template_directory_uri() ?>/assets/images/click.png" alt="click" class="hero__call-image">
         <p class="hero__call-text"><span class="bold">Перезвоним</span> через 1 минуту</p>

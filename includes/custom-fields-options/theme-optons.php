@@ -51,13 +51,13 @@ Container::make('theme_options', 'Настройки темы')
       ->add_fields(array(
         Field::make('text', 'phone', 'Номер'),
         Field::make('text', 'phone_description', 'Подпись'),
-      ))
+      )),
+    Field::make('text', 'privacy_link', 'Ссылка на политику конфиденциальности данных'),
+  ))
+  ->add_tab(('Формы'), array(
+    Field::make('text', 'form_contact', 'Форма "Узнайте стоимость ремонта"'),
   ))
   ->add_tab(('Слайдер "Клиенты"'), array(
-    // Field::make('complex', 'rational_slider_clients_advantages', 'Преимущества')
-    //   ->add_fields(array(
-    //     Field::make('text', 'advantage_title', 'Заголовок'),
-    //   )),
     Field::make('complex', 'rational_slider_clients_logos', 'Клиенты')
       ->add_fields(array(
         Field::make('image', 'client_image', 'Логотип'),

@@ -4,7 +4,7 @@ if (!defined('ABSPATH')) {
 }
 ?>
 
-<section class="page__section page__contact-form contact-form">
+<section class="page__section page__contact-form contact-form" id="contact-form">
 
   <div class="contact-form__body container">
     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/iphone.png" class="contact-form__bg image" />
@@ -23,28 +23,30 @@ if (!defined('ABSPATH')) {
           $link = $social['social_link'];
         ?>
           <a href="<?php echo $link ?>" class="contact-form__social">
-          <img src="<?php echo $icon[0] ?>" alt="<?php echo $title ?>" class="contact-form__social-image">
-        </a>
+            <img src="<?php echo $icon[0] ?>" alt="<?php echo $title ?>" class="contact-form__social-image">
+          </a>
 
         <?php } ?>
       </div>
     </div>
+    <?php echo do_shortcode(carbon_get_theme_option('form_contact')); ?>
     <form action="" class="contact-form__form">
       <div class="contact-form__form-column">
         <p class="contact-form__input-title">Введите номер телефона</p>
-        <input type="phone" placeholder="+ 7 (_ _ _) _ _ _ - _ _ - _ _" class="contact-form__input">
+        <input type="phone" placeholder="+ 7 (_ _ _) _ _ _ - _ _ - _ _" class="contact-form__input" id="contact-form-phone">
         <div class="contact-form__submit-wrapper">
           <label>
             <input type="checkbox" checked>
           </label>
           <div class="contact-form__submit-text">
-            Согласен с условиями <a href="#" class="contact-form__submit-link link">политики конфиденциальности
+            <?php $privacy_link = carbon_get_theme_option('privacy_link'); ?>
+            Согласен с условиями <a href="<?php echo $privacy_link; ?>" class="contact-form__submit-link link">политики конфиденциальности
               данных</a>
           </div>
         </div>
       </div>
       <div class="contact-form__form-column">
-        <button type="submit" class="contact-form__submit">
+        <button type="submit" class="contact-form__submit" id="contact-form-submit">
           <span>Узнать стоимость</span>
           <div>
             <img class="image contact-form__submit-arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-white.png" alt="->">
@@ -52,6 +54,24 @@ if (!defined('ABSPATH')) {
         </button>
       </div>
     </form>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const contactFormInput = document.querySelector('#contact-form-phone');
+        const contactFormButton = document.querySelector('#contact-form-submit');
+
+        const fakeContactFormInput = document.querySelector('.custom-form .wpcf7-text');
+        const fakeContactFormButton = document.querySelector('.custom-form .wpcf7-submit');
+
+
+        contactFormInput.addEventListener('change', (e) => {
+          fakeContactFormInput.value = e.target.value;
+        });
+
+        contactFormButton.addEventListener('click', () => {
+          fakeContactFormButton.click();
+        })
+      });
+    </script>
     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/iphone-mob.png" class="contact-form__bg-mob image" />
   </div>
 </section>

@@ -1,3 +1,7 @@
+.custom-form {
+  display: none;
+}
+
 .contact-form {
   background-color: var(--color-theme-white);
 }
@@ -130,6 +134,8 @@
   background: var(--color-theme-red);
   border: none;
   border-radius: 50px;
+
+  cursor: pointer;
 }
 .contact-form__submit-arrow {
   width: 15px;
