@@ -65,3 +65,15 @@ if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/woocommerce/includes/wc-functions.php';
 	require get_template_directory() . '/woocommerce/includes/wc-functions.php';
 }
+
+
+## Определение шаблона для страницы Магазина shop.php
+add_filter( 'woocommerce_template_loader_files','qfurs_add_shop_template_file', 10, 1 );
+ 
+function qfurs_add_shop_template_file($default_file){
+    if( is_shop()){
+        $default_file[] = WC()->template_path() .'shop.php';
+    }
+ 
+    return $default_file;
+}
